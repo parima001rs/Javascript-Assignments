@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="changeColor()" >
+    <div id="quoteDisplay"></div>
+    <script>
+   var quotes = ["“The purpose of our lives is to be happy.” — Dalai Lama","“Life is what happens when you’re busy making other plans.” — John Lennon","“Get busy living or get busy dying.” — Stephen King","“You only live once, but if you do it right, once is enough.” — Mae West","“Many of life’s failures are people who did not realize how close they were to success when they gave up.”– Thomas A. Edison"];
+var randomNumber = Math.floor(Math.random()*(quotes.length));
+        
+function changeColor() {
+    document.querySelector('#quoteDisplay').innerHTML = quotes[randomNumber];
+}       
+</script> 
+</body>
+</html>
